@@ -1,0 +1,307 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Dosis';
+    src: url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+}
+@font-face {
+    font-family: 'Inter2';
+    src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+/*cabecalho */
+
+header{
+    background-color: #22a0a0;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top:0px;
+    margin: auto;
+}
+ 
+#cabecalho{
+    margin: auto;
+    max-width: 813px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    position: absolute;
+    margin: auto;
+    margin-top: 33px;
+}
+
+
+#menu ul{
+    list-style: none;
+    position: absolute;
+    float: right;
+    left: 1050px;
+    top: 0px;
+    padding: 10px;
+    margin-top: 55px;   
+}
+
+#menu li{
+    display: inline-block;
+    padding: 5px;
+    margin: 3px;
+}
+
+#menu li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#menu li:hover, #menu li.aberto{
+    border-bottom: 2px solid #ffffff;
+}
+
+#busca{
+    position: absolute;
+    left: 700px;
+    margin-top: 65px;
+}
+
+#caixa{
+    width: 280px;
+    height: 40px;
+    left: 100px;
+}
+
+#lupa{
+    position: absolute;
+    left: 945px;
+    margin-top: 69px;
+}
+
+/*corpo*/
+
+#corpo{
+    margin: auto;
+    max-width: 850px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+#tema h1{
+    position: relative;
+    margin-top: 210px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.pessoas{
+    width: 1340px;
+    position: relative;
+    padding: 20px 0;
+    right: 200px;
+    
+}
+
+.pessoas li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.pessoas li img{
+    position: relative;
+    display: block;
+    left: 30px;
+}
+
+.pessoas li h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    width: 270px;
+    position: relative;
+    text-align: left;
+    margin-left: 35px;    
+}
+
+.descricao{
+    font-family: 'Inter2', sans-serif;
+    font-size: 12px;
+    position: relative;
+    width: 49.5%;
+    text-align: center;
+    left: 31px;
+}
+
+
+#centro{
+    position: relative;
+    width: auto;
+    height: 380px;
+    background-image: url("arvores.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#centro h3{
+    color: white;
+    position: relative;
+    padding-top: 150px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+
+}
+
+#tema2 h2{
+    position: relative;
+    margin-top: 50px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#conteudo2{
+    margin: auto;
+    max-width: 850px;
+    display: block;
+    justify-content: space-between;
+    height: 450px;
+    position: relative;
+}
+
+#caixa1 #nome{
+    background-color: #daf5f5;
+    padding: 10px;
+    border: 1px solid #22a0a0;
+    border-radius: 10px;
+    width: 209px;
+    position: relative;
+}
+
+#nome::placeholder{
+    font-family: 'Inter2', sans-serif;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+#caixa1 #mensagem{
+    position: relative;
+    float: right;
+    padding: 5px;  
+    background-color: #70a3a3;
+    border: 1px solid #70a3a3;
+    border-radius: 10px;
+    margin-top: 8px;
+    padding: 6px;
+}
+ 
+#mensagem::placeholder{
+    color: white;
+    font-family: 'Inter2', sans-serif;
+    font-size: 14px;
+    padding-left: 12px;
+}
+#caixa2 #comentario{
+    position: relative;
+    background-color: #daf5f5;
+    padding: 10px;
+    border: 1px solid #22a0a0;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 850px;
+    height: 250px;
+}
+
+#comentario::placeholder{
+    font-family: 'Inter2', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    padding-left: 12px;
+}
+
+#caixa3 #botao{
+    margin-top: 10px;
+    position: relative;
+    float: right;
+    background-color: #155050;
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+
+
+/*rodape*/
+
+footer{
+    background-color: #22a0a0;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+#lista{
+    left:455px;
+    position: absolute; 
+    list-style: none;
+    margin-top: 5px; 
+}
+
+#lista h4{
+    position: relative;
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+#lista li{
+    position: relative;
+    left:18px;
+    margin-top: 0px;
+    color:#ffffff;
+    font-family: 'Inter2', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#logo2{
+    position: absolute;
+    margin: auto;
+    left: 1260px;
+    margin-top: 20px;
+}
